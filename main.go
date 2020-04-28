@@ -7,10 +7,10 @@ import (
 
 func main() {
 	sulaisu := make([]int, 0)
-	// min, max := 15, 30
+	min, max := 15, 100
 
-	for i := 0; i < 20; i++ {
-		randomea := rand.Intn(30)
+	for i := 0; i < 30; i++ {
+		randomea := rand.Intn(max-min) + min
 		fmt.Println("ini randomea", randomea)
 		for j := 0; j < 1; j++ {
 			tanda := 0
